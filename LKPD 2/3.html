@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let detik =5440
+        let menit =0
+        let jam = 0
+
+        let hasil = (jam * 3600) + (menit * 60) + detik
+        let jamHasil = Math.floor(hasil / 3600)
+        let sisaDetik = hasil % 3600
+        let menitHasil = Math.floor(sisaDetik / 60)
+        let detikHasil = sisaDetik % 60
+
+        console.log("jam",jamHasil)
+        console.log("menit" ,menitHasil)
+        console.log("detik" ,detikHasil)
+    </script>
+</body>
+</html>
